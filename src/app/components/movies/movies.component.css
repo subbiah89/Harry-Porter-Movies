@@ -1,0 +1,42 @@
+.movieContainer {
+    background: #eee;
+    padding: 10px 30px;
+}
+
+.movieTitle {
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.movieDetails span {
+    margin-right: 20px;
+}
+
+.movieListSec {
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.movieSection {
+    margin-top: 50px;
+}
+
+.movieDetails {
+    display: inline-block;
+    width: 70%;
+}
+
+.btnSec {
+    display: inline-block;
+}
+
+.btnSec button {
+    color: black;
+    padding: 10px 20px;
+    background: #ccc;
+}
+
+
+h4 {
+    display: list-item;
+}

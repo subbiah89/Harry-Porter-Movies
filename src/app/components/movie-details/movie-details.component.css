@@ -1,0 +1,53 @@
+.movieDetailsSec {
+    padding: 50px 100px;
+    background: #eee;
+}
+
+.summarySection img {
+    width: 200px;
+    float: left
+}
+
+.summarySection span {
+    font-weight: 700;
+}
+
+.detailsSection {
+    clear: both;
+}
+
+.detailsSection h4 {
+    text-align: center;
+}
+
+.titleSec {
+    display: flex;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+}
+
+.titleSec.cineSec {
+    border-bottom: 1px solid #aaa;
+}
+
+.titleValue {
+    min-width: 200px;
+    font-weight: 700;
+    text-align: right;
+    border-right: 3px solid;
+    background: #ccc;
+}
+
+.titleSec span {
+    padding: 10px;
+}
+
+.navMoviesSec {
+    margin: 10px 10px 30px 10px;
+}
+
+.navMoviesSec button {
+    color: black;
+    background: #ccc;
+    padding: 10px 20px;
+}

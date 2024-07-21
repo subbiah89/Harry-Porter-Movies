@@ -1,0 +1,7 @@
+<div class="filterSection">
+    <h5>Filters</h5>
+    <div>
+        Title: <input type="text" [(ngModel)]="titleFilter" (input)="filterInputs()">
+        Release Year: <input type="number" #numberInput [(ngModel)]="yearFilter" (input)="filterInputs()">
+    </div>
+</div>

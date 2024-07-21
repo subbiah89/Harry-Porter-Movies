@@ -1,0 +1,21 @@
+<div class="movieContainer">
+    <app-movies-filter (filterInputValues)="filterSearch($event)"></app-movies-filter>
+
+    <div class="movieSection">
+
+        <ng-container class="movieList" *ngFor="let movie of filteredMovies">
+            <div *ngIf="movieFilter(movie)" class="movieListSec">
+
+
+                <div class="movieDetails">
+                    <h4 class="movieTitle">{{movie.title}}</h4>
+                    <span>Release Date: {{movie.release_date}}</span>
+                    <span>Budget: {{movie.budget | currencyFormat}} </span>
+                    <span>Duration: {{movie.duration | timeFormat}}</span>
+                </div>
+                <div class="btnSec">
+                    <button [id]="movie.id" (click)="navToMovieDetails(movie.id)">Details</button>
+                </div>
+            </div>
+
+        </ng-container>

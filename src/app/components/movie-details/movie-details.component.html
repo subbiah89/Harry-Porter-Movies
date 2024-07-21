@@ -1,0 +1,38 @@
+<section class="movieDetailsSec">
+    <div class="navMoviesSec">
+        <button (click)="navToMovie()">Back</button>
+    </div>
+
+    <div class="detailContainer">
+
+        <h3 class="movieTitle">{{movieDetails.title}}</h3>
+        <div class="summarySection">
+            <img src="{{movieDetails.poster}}" alt="" />
+            <p><span>Summary: </span> {{movieDetails.summary}}</p>
+        </div>
+
+        <div class="detailsSection">
+            <h4> Details</h4>
+            <div class="titleSec">
+                <span class="titleValue">Box office</span>
+                <span>{{movieDetails.box_office | currencyFormat}}</span>
+            </div>
+            <div class="titleSec">
+                <span class="titleValue">Budget</span>
+                <span>{{movieDetails.budget | currencyFormat}}</span>
+            </div>
+            <div class="titleSec">
+                <span class="titleValue">Duration</span>
+                <span>{{movieDetails.duration | timeFormat}}</span>
+            </div>
+            <div class="titleSec">
+                <span class="titleValue">Producers</span>
+                <span>{{namesFormat(movieDetails.producers)}}</span>
+            </div>
+            <div class="titleSec cineSec">
+                <span class="titleValue">Cinematographers</span>
+                <span>{{namesFormat(movieDetails.cinematographers)}}</span>
+            </div>
+        </div>
+    </div>
+</section>
